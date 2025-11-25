@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clear Example with Floated Image</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            border: 2px solid #888;
+            padding: 24px;
+            max-width: 700px;
+            margin: 40px auto;
+            background: #f7f1ed;
+        }
+        .title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .image-float {
+            float: left;
+            width: 180px;
+            margin-right: 18px;
+            margin-bottom: 8px;
+            border-radius: 6px;
+        }
+        .content {
+            font-size: 1.1em;
+            color: #5b4c44;
+        }
+        .footer {
+            clear: both;
+            padding-top: 14px;
+            color: #5b4c44;
+            font-size: 1.08em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">clear (Footer below floated content)</div>
+        <img class="image-float" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" alt="Creative Work on Laptop">
+        <span class="content">
+            This paragraph wraps around the floated image.
+        </span>
+        <div class="footer">
+            This is the footer section, forced below the floated image using clear:both.
+        </div>
+    </div>
+</body>
+</html>
